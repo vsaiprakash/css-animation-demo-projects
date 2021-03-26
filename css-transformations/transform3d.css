@@ -1,8 +1,4 @@
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body{
     perspective: 500px;
     /* Perspective is like distance between the body layer and our eye */
     /* If translateZ moves morethan the perspective, then element goes over screen dissapears */
