@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS 3D Transformations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./../favicon.ico">
+    <link rel="stylesheet" href="transform3d.css">
+    <script src="transform3d.js" defer></script>
+</head>
+
+<body>
+    <h2>CSS 3D Transformations</h2>
+    <div>
+        <h3>3D Translations</h3>
+        <p>Here we have Z-axis along with X & Y.
+            <br>Steps:
+            <ol>
+                <li>First, we need to define percpective</li>
+                <li>Next, we can start using Z axis</li>
+            </ol>
+        </p>
+    </div>
+    <div class="center row-container">
+        <div class="custom-div zoom1">
+            Below perspective
+        </div>
+        <div class="custom-div zoom2">
+            On perspective
+        </div>
+        <div class="custom-div zoom3">
+            Above perspective
+        </div>
+    </div>
+    <p>
+        Perspective is like distance between the body layer and our eye <br>
+        If translateZ moves morethan the perspective, then element goes over screen dissapears
+    </p>
+    <hr>
+    <div>
+        <h3>3D Rotation</h3>
+        <p>
+            Once perspective is set, rotateZ() will work similar to rotateX & rotateY in without
+            perspective
+        </p>
+        <div class="center row-container">
+            <div class="custom-div rotateX">
+                Rotate X
+            </div>
+            <div class="custom-div rotateY">
+                Rotate Y
+            </div>
+            <div class="custom-div rotateZ">
+                Rotate Z
+            </div>
+        </div>
+    </div>
+
+</body>

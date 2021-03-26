@@ -1,0 +1,76 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    perspective: 500px;
+    /* Perspective is like distance between the body layer and our eye */
+    /* If translateZ moves morethan the perspective, then element goes over screen dissapears */
+}
+
+.center{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.row-container{
+    display: flex;
+}
+
+.custom-div{
+    color: white;
+    width: 100px;
+    height: 100px;
+    transition: transform 1s;
+}
+
+.zoom1{
+    background-color: blueviolet;
+}
+
+.zoom2{
+    background-color:chocolate;
+}
+
+.zoom3{
+    background-color:darkblue;
+}
+
+.zoom1:hover{
+    transform: translateZ(300px)
+}
+
+.zoom2:hover{
+    transform: translateZ(490px)
+}
+
+.zoom3:hover{
+    transform: translateZ(800px)
+}
+
+.rotateX{
+    background-color: blueviolet;
+}
+
+.rotateX:hover{
+    transform: rotateX(60deg)
+}
+
+.rotateY{
+    background-color: chocolate;
+}
+
+.rotateY:hover{
+    transform: rotateY(60deg)
+}
+
+.rotateZ{
+    background-color: darkblue;
+}
+
+.rotateZ:hover{
+    transform: rotateZ(60deg)
+}

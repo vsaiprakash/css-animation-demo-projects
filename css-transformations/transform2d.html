@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS 2D Transformations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./../favicon.ico">
+    <link rel="stylesheet" href="transform2d.css">
+    <script src="transform2d.js" defer></script>
+</head>
+
+<body>
+    <h2>CSS 2D Transformations</h2>
+    <div>
+        <h3>1. List of Functions</h3>
+        <p>
+            Transforming existing HTML elements. Its functions:
+            <ol>
+                <li>scale</li>
+                <li>translate</li>
+                <li>rotate</li>
+                <li>skew</li>
+            </ol>
+        </p>
+    </div>
+    <hr>
+    <div>
+        <h3>2. Translate</h3>
+        <div class="demo translateDiv">
+            Division Element
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h3>3. Scale (resizing)</h3>
+        <div class="demo scaleDiv">
+            Division Element
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h3>4. Rotate</h3>
+        <div class="demo rotateDiv">
+            Division Element
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h3>5. Skew</h3>
+        <div class="demo skewDiv">
+            Division Element
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h3>5. Transform Origin</h3>
+        <p>
+            By Changing the Origin of an element, 
+            the transformations will take the new orign instead of element's center
+        </p>
+        <div class="row-container">
+            <div class="demo transformOriginDiv">
+                Division Element
+            </div>
+    
+            <div class="demo transformOriginDiv transformOriginTopDiv">
+                Division Element - top
+            </div>
+    
+            <div class="demo transformOriginDiv transformOriginLeftDiv">
+                Division Element - left
+            </div>
+    
+            <div class="demo transformOriginDiv transformOriginRightDiv">
+                Division Element - right
+            </div>
+    
+            <div class="demo transformOriginDiv transformOriginBottomDiv">
+                Division Element - bottom
+            </div>
+    
+            <div class="demo transformOriginDiv transformOriginTopRightDiv">
+                Division Element - top right
+            </div>
+        </div>
+        
+
+        <p>Similarly others ... </p>
+        <p>
+            Transform Origin takes % values also
+            <br>
+            parameter 1: left-to-right from top-left corner
+            <br>
+            parameter 2: top-to-bottom from top-right corner
+            <br>
+            Example: 1. "transform-origin: 50%, 50%;"   will resolve to center of element
+        </p>
+        <div class="row-container">
+            <div class="demo transformOriginDiv transformOriginPercentage5050">
+                Division Element - 50% 50%
+            </div>
+            <div class="demo transformOriginDiv transformOriginPercentage3070">
+                Division Element - 30% 70%
+            </div>
+        </div>
+        <p>
+            Transform Origin also takes px pixel values
+        </p>
+    </div>
+    
+</body>

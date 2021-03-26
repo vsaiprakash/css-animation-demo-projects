@@ -1,0 +1,79 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    border: none;
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+}
+
+.basic{
+    background-color: blue;
+    color: white;
+
+    /* Basic Transition */
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.basic:hover{
+    background-color: green;
+}
+/* 2. Transition Options
+        1. Transition Timing Function  */
+.move{
+    /* Basic Transition on Translation Movement to show Transition Timing Functions */
+    transition-property: translate();
+    transition-duration: 3s;
+}
+
+.easeTransButton{
+    transition-timing-function: ease;
+}
+
+.linearTransButton{
+    transition-timing-function: linear;
+}
+
+.easeInTransButton{
+    transition-timing-function:ease-in;
+}
+
+.easeOutTransButton{
+    transition-timing-function: ease-out;
+}
+
+.easeInOutTransButton{
+    transition-timing-function: ease-in-out;
+}
+
+.delayTransition{
+    transition-delay: 3s; /* All transitions will be delayed by given time */
+}
+
+.move:hover{
+    transform: translate(900px, 0);
+}
+
+.multipleTransition{
+    /* Multiple properties */
+    /* transition-property: background-color color; */
+    /* transition-duration: 3s; */
+
+    /* To Apply on all properties */
+    /* transition-property: all; */
+
+    /* Short hand notation */
+    /* transition: background-color 3s ease-in-out 1s; */
+    /* transition: color 5s ease-in-out 3s; */
+
+    /* More than one property separated by comma*/
+    transition: background-color 3s ease-in-out 1s, color 5s ease-in-out 3s;
+}
+
+.multipleTransition:hover{
+    background-color: red;
+    color: white;
+}

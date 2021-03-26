@@ -1,0 +1,111 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.demo{
+    width: 100px;
+    margin: 50px;
+}
+
+.translateDiv{
+    background-color: grey;
+    transition: transform 2s;
+}
+
+.translateDiv:hover{
+    /* transform: translateX(500px); */
+    /* transform: translateX(-500px); */
+    /* transform: translateY(500px); Down */
+    /* transform: translateY(-500px); Up */
+    transform: translate(500px, -500px)/* x,y */
+}
+
+.scaleDiv{
+    background-color: rgb(255, 157, 157);
+    transition: transform 2s;
+}
+
+.scaleDiv:hover{
+    /* X Width - times*/
+    transform: scaleX(2);
+    /* X, Y, scale(X,Y) or scale(value) value will be for both X,Y */
+}
+
+.rotateDiv{
+    background-color: rgb(152, 200, 255);
+    transition: transform 2s;
+}
+
+.rotateDiv:hover{
+    /* transform: rotate(20deg); */
+    /* transform: rotate(360deg); */
+    /* 1 turn = 360deg */
+    /* transform: rotate(1turn); */
+    transform: rotate(3turn);
+    /* transform: rotate(-1turn); */
+    /* transform: rotate(0.3turn); */
+
+    /* Works with Gradient also  */
+    /* transform: rotate(200grad); */
+
+    /* transform: rotate(720); Wrong as it cross 360 degrees */
+}
+
+
+.skewDiv{
+    background-color: rgb(222, 255, 196);
+    transition: transform 2s;
+}
+
+.skewDiv:hover{
+    transform: skewX(30deg);
+}
+
+.row-container{
+    display: flex;
+}
+
+.transformOriginDiv{
+    transition: transform 2s;
+}
+
+.transformOriginTopDiv{
+    background-color: rgb(255, 209, 247);
+    transform-origin: top;
+}
+
+.transformOriginLeftDiv{
+    background-color: rgb(239, 255, 209);
+    transform-origin: left;
+}
+
+.transformOriginRightDiv{
+    background-color: rgb(209, 246, 255);
+    transform-origin: right;
+}
+
+.transformOriginBottomDiv{
+    background-color: rgb(255, 180, 205);
+    transform-origin: bottom;
+}
+
+.transformOriginTopRightDiv{
+    background-color: rgb(211, 179, 253);
+    transform-origin: top right;
+}
+
+.transformOriginPercentage5050{
+    background-color: rgb(56, 46, 46);
+    color: white;
+    transform-origin: 50% 50%;
+}
+
+.transformOriginPercentage3070{
+    background-color: rgb(47, 46, 56);
+    color: white;
+    transform-origin: 30% 70%;
+}
+
+.transformOriginDiv:hover{
+    transform: rotate(30deg);
+}

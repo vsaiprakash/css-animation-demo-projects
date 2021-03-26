@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS Transitions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./../favicon.ico">
+    <link rel="stylesheet" href="transition.css">
+    <script src="transitions.js" defer></script>
+</head>
+
+<body>
+    <h2>CSS Transitions</h2>
+    <div>
+        <h3>1. Basic CSS Transitions</h3>
+        <button class="basic">
+            button 1
+        </button>
+    </div>
+    <hr>
+    <div>
+        <h3>2. Transition Options</h3>
+        <p>
+            <ol>
+                <li>Transition Timing Function: ease, linear, ease-in, ease-out, ease-in-out</li>
+                <li>Transition Delay</li>
+            </ol>
+        </p>
+        <h5>Transition Timing Function</h5>
+        <button class="move easeTransButton">
+            Ease
+        </button>
+        <br><br>
+        <button class="move linearTransButton">
+            Linear
+        </button>
+        <br><br> 
+        <button class="move easeInTransButton">
+            Ease-In
+        </button>
+        <br><br> 
+        <button class="move easeOutTransButton">
+            Ease-Out
+        </button>
+        <br><br> 
+        <button class="move easeInOutTransButton">
+            Ease-In-Out
+        </button>
+
+        <h5>Transition Delay</h5>
+        <div>
+            Timer: <span id="timerElement"></span>
+        </div>
+        <button class="move delayTransition">
+            Delayed
+        </button>
+    </div>
+    <hr>
+    <div>
+        <h3>3. Different ways of using Transitions</h3>
+        <p>
+            <i> transition: (css-property) (transition-duration) (transition-timing-function) (transition-delay)</i>
+        </p>
+        <button class="multipleTransition">
+            Multiple Transitions
+        </button>
+    </div>
+    <hr>
+    <div>
+        <h3>4. Which Properies can be transitioned</h3>
+        <p>
+            Like display tag, font-style, ... etc., are not transitionable
+            <br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties">
+                https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
+            </a>
+        </p>
+    </div>
+    <br><br><br><br>
+</body>
+
+</html>
